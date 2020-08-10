@@ -71,7 +71,7 @@ export default  class Resume extends Component {
 
             <div className="nine columns main-col">
 
-               <p>
+               <p style={{fontSize: 20}}>
                {resumeData.skillsDescription}
                </p>
 
@@ -84,7 +84,7 @@ export default  class Resume extends Component {
                     return(
                       <li>
                       <span className={`${item.skillIcon}`}>
-                      </span><em>{item.skillname}</em>
+                      </span><em>   {item.skillname}</em>
                       </li>
                     )
                   })

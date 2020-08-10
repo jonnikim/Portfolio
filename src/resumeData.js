@@ -1,11 +1,11 @@
 let resumeData = {
   imagebaseurl: "https://rbhatia46.github.io/",
   name: "Jonathan Kim",
-  role: "FullStack Web Developer",
+  role: "Full Stack Web Developer",
   linkedinId: "https://www.linkedin.com/in/jonathan-h-kim/",
   skypeid: "Your skypeid",
   roleDescription:
-    " I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
+    " Currently journeying through the magical world of programming. Equipped with a passion for learning and a natural knack for teaching, my dream is to provide an easy to learn platform for K-12 students who are interested in programming.",
   socialLinks: [
     {
       name: "linkedin",
@@ -67,8 +67,15 @@ let resumeData = {
       YearOfLeaving: "Dec 2015",
       Achievements: "Groundskeeper for a non-profit organization at Zaca Lake.",
     },
+    {
+      CompanyName: "TOP Learning Center - Glendale/Burbank",
+      specialization: "Assistant Director",
+      MonthOfLeaving: "2009- ",
+      YearOfLeaving: "Jan 2015",
+      Achievements: "Handled day to day operations with students and instructors. Created Burbank/Glendale TLC's syllabus and course for PSATs/SATs. Tutored K-12 age students in English, math, and sciences to help them better understand school lessons and advance them in subjects for upcoming school work. Tutored High School Students for College Prep and SATs.",
+    },
   ],
-  skillsDescription: "Your skills here",
+  skillsDescription: "Languages & Libraries/Frameworks:",
   skills: [
     {
       skillname: "Reactjs",
@@ -76,43 +83,60 @@ let resumeData = {
     },
     {
       skillname: "Javascript",
+      skillIcon: "devicon-javascript-plain"
     },
     {
       skillname: "HTML",
+      skillIcon: "devicon-html5-plain"
     },
     {
       skillname: "CSS",
+      skillIcon: "devicon-css3-plain"
     },
     {
       skillname: "Nodejs",
+      skillIcon: "devicon-nodejs-plain"
     },
     {
-      skillname: "SQL & Sequelize",
+      skillname: "MySQL & Sequelize",
+      skillIcon: "devicon-mysql-plain"
+    },
+    {
+      skillname: "Sequelize",
+      skillIcon: "devicon-sequelize-plain"
     },
     {
       skillname: "MongoDB & Mongoose",
+      skillIcon: "devicon-mongodb-plain"
     },
   ],
   portfolio: [
     {
-      name: "project1",
-      description: "mobileapp",
-      imgurl: "images/portfolio/phone.jpg",
+      name: "Dubsado - Scheduler",
+      description: "Scheduler application created for client Dubsado, LLC.",
+      imgurl: "images/portfolio/dubsado_logo.png",
+      url: "https://powerful-journey-34145.herokuapp.com/"
     },
     {
-      name: "project2",
-      description: "mobileapp",
-      imgurl: "images/portfolio/project.jpg",
+      name: "Workout Tracker",
+      description: "Workout Tracker using MongoDB and Nodejs",
+      imgurl: "images/portfolio/workout.png",
+      url: "https://mighty-anchorage-19934.herokuapp.com/?id=5f2a1d131a542800172a5a65"
+
     },
     {
-      name: "project3",
-      description: "mobileapp",
-      imgurl: "images/portfolio/project2.png",
+      name: "Note Taker",
+      description: "Basic Note Taker using Nodejs",
+      imgurl: "images/portfolio/notes.png",
+      url: "https://polar-caverns-98753.herokuapp.com/"
+
     },
     {
-      name: "project4",
-      description: "mobileapp",
-      imgurl: "images/portfolio/phone.jpg",
+      name: "Model View Controller Application",
+      description: "A simple 'eat a burger' application made to highlight MVC design paradigm",
+      imgurl: "images/portfolio/burger.png",
+      url: "https://scenic-sequoia-26844.herokuapp.com/"
+
     },
   ],
   testimonials: [

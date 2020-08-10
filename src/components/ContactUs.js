@@ -7,7 +7,7 @@ export default class ContactUs extends Component {
         <div className="row section-head">
           <div className="ten columns">
             <p className="lead">
-              Feel free to contact me for any work or suggestions below
+              Feel free to contact me for any work or collaborations below
             </p>
           </div>
         </div>
@@ -15,9 +15,6 @@ export default class ContactUs extends Component {
           <aside className="eigth columns footer-widgets">
             <div className="widget">
               <h4>Email: {resumeData.email}</h4>
-            </div>
-           < div className="widget">
-              <h4>LinkedIn: {resumeData.linkedinId}</h4>
             </div>
           </aside>
         </div>
