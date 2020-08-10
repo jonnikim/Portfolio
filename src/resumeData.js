@@ -26,7 +26,7 @@ let resumeData = {
   aboutme:
     "",
   address: "Glendale, CA",
-  website: "",
+  website: "https://dry-springs-76393.herokuapp.com/",
   email: "jonathan213kim@gmail.com",
   education: [
     {
