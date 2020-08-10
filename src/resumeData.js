@@ -127,14 +127,14 @@ let resumeData = {
     {
       name: "Note Taker",
       description: "Basic Note Taker using Nodejs",
-      imgurl: "images/portfolio/notes.png",
+      imgurl: "images/portfolio/notetaker.png",
       url: "https://polar-caverns-98753.herokuapp.com/"
 
     },
     {
       name: "Model View Controller Application",
       description: "A simple 'eat a burger' application made to highlight MVC design paradigm",
-      imgurl: "images/portfolio/burger.png",
+      imgurl: "images/portfolio/burgers.png",
       url: "https://scenic-sequoia-26844.herokuapp.com/"
 
     },
