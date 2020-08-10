@@ -52,7 +52,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 30px;
    text-align: center;
 }
 
@@ -295,6 +295,10 @@ ul#nav li.current a { color: #F06000; }
   	margin-top: 36px;
    list-style: none;
 }
+.skills {
+   margin-top: 36px;
+ list-style: none;
+}
 .bars li {
    position: relative;
   	margin-bottom: 60px;
@@ -326,32 +330,38 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .photoshop {
-  	width: 60%;
+     width: 60%;
+     animation: photoshop 2s ease;
   	-moz-animation: photoshop 2s ease;
   	-webkit-animation: photoshop 2s ease;
 }
 .illustrator {
   	width: 55%;
+     animation: photoshop 2s ease;
   	-moz-animation: illustrator 2s ease;
   	-webkit-animation: illustrator 2s ease;
 }
 .wordpress {
   	width: 50%;
+     animation: photoshop 2s ease;
   	-moz-animation: wordpress 2s ease;
   	-webkit-animation: wordpress 2s ease;
 }
 .css {
   	width: 90%;
+     animation: photoshop 2s ease;
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
 .html5 {
   	width: 80%;
+     animation: photoshop 2s ease;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
 }
 .jquery {
   	width: 50%;
+     animation: photoshop 2s ease;
   	-moz-animation: jquery 2s ease;
   	-webkit-animation: jquery 2s ease;
 }
@@ -405,6 +415,56 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
+
+@keyframes photoshop {
+   0%   { width: 0px;  }
+   100% { width: 60%;  }
+ }
+ @keyframes illustrator {
+   0%   { width: 0px;  }
+   100% { width: 55%;  }
+ }
+ @keyframes wordpress {
+   0%   { width: 0px;  }
+   100% { width: 50%;  }
+ }
+ @keyframes css {
+   0%   { width: 0px;  }
+   100% { width: 90%;  }
+ }
+ @keyframes html5 {
+   0%   { width: 0px;  }
+   100% { width: 80%;  }
+ }
+ @keyframes jquery {
+   0%   { width: 0px;  }
+   100% { width: 50%;  }
+ }
+ 
+ @keyframes photoshop {
+   0%   { width: 0px;  }
+   100% { width: 60%;  }
+ }
+ @keyframes illustrator {
+   0%   { width: 0px;  }
+   100% { width: 55%;  }
+ }
+ @keyframes wordpress {
+   0%   { width: 0px;  }
+   100% { width: 50%;  }
+ }
+ @keyframes css {
+   0%   { width: 0px;  }
+   100% { width: 90%;  }
+ }
+ @keyframes html5 {
+   0%   { width: 0px;  }
+   100% { width: 80%;  }
+ }
+ @keyframes jquery {
+   0%   { width: 0px;  }
+   100% { width: 50%;  }
+ }
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
@@ -720,7 +780,7 @@ call-to-action .button {
 .flexslider .slides > li { position: relative; }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
+.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; backface-visibility: hidden}
 /* Suggested container for slide animation setups. Can replace this with your own */
 .flex-container { zoom: 1; position: relative; }
 
@@ -835,7 +895,7 @@ call-to-action .button {
    font: 15px/24px 'opensans-bold', sans-serif;
    margin: 12px 0;
    color: #EBEEEE;
-	display: inline-block;
+	/* display: inline-block; */
 	float: left;
    width: 26%;
 }
