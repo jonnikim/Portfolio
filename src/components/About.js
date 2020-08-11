@@ -29,14 +29,23 @@ export default class About extends Component {
                   <p className="address">
        						<span>{resumeData.name}</span>
                      <br></br>
-       						   <span>
+       						   {/* <span>
                      {resumeData.address}
                     </span>
-                    <br></br><span>Portfolio: 
-                    <a target="_blank" rel="noopener noreferrer" href = {resumeData.website}> Click here</a>
+                    <br></br> */}
+                    <span>
+                    <a target="_blank" rel="noopener noreferrer" href = {resumeData.website}>Portfolio</a>
                     </span>
-                    <br></br><span>Email: 
-                    <a target="_blank" rel="noopener noreferrer" href ="mailto:jonathan213kim@gmail.com"> Jonathan213kim@gmail.com</a>
+                    <br></br><span>
+                    <a target="_blank" rel="noopener noreferrer" href ="mailto:jonathan213kim@gmail.com">Jonathan213kim@gmail.com</a>
+
+                    </span>
+                    <br></br><span>
+                    <a target="_blank" rel="noopener noreferrer" href ={resumeData.socialLinks[0].url}>LinkedIn</a>
+
+                    </span>
+                    <br></br><span>
+                    <a target="_blank" rel="noopener noreferrer" href ={resumeData.socialLinks[1].url}>GitHub</a>
 
                     </span>
 

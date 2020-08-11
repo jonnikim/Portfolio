@@ -6,16 +6,17 @@ export default class Porfolio extends Component {
       <section id="portfolio">
       <div className="row">
         <div className="twelve columns collapsed">
-          <h1>Check Out Some of My Works.</h1>
+          <h1>Projects:</h1>
           <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
 
           {
             resumeData.portfolio && resumeData.portfolio.map((item)=>{
               return(
-                <div className="columns portfolio-item">
+                <div className=" portfolio-item" style={{ width: "45%", display:"inline-block", margin: 15}}>
                   <div className="item-wrap">
                     <a target="_blank" rel="noopener noreferrer"  href={`${item.url}`}>
-                      <img src={`${item.imgurl}`} className="item-img" alt=""/>
+                      <img src={`${item.imgurl}`} className="item-img" alt="" style={{height: 330, width: "100%"}}/>
+                      
                       <div className="overlay">
                         <div className="portfolio-item-meta">
                           <h5>{item.name}</h5>
@@ -24,6 +25,7 @@ export default class Porfolio extends Component {
                       </div>
                     </a>
                   </div>
+                  <hr/>
                 </div>
               )
             })

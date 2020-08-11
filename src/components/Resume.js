@@ -4,22 +4,58 @@ export default  class Resume extends Component {
     let resumeData = this.props.resumeData;
     return (
       <section id="resume">
+         <div className="row education">
+
+<div className="three columns header-col">
+   <h1><span>Resume</span></h1>
+</div>
+
+<div className="nine columns main-col">
+        <div className="row item">
+           <div className="twelve columns">
+              <a target="_blank" rel="noopener noreferrer"href="https://drive.google.com/file/d/1LrRUw0l7iP6yvI9tMBl3KEuFAiNLHEvX/view?usp=sharing">.PDF</a>
+              
+           </div>
+        </div>
+</div>
+</div>
+
         <div className="row education">
 
-            <div className="three columns header-col">
-               <h1><span>Education</span></h1>
-            </div>
+          <div className="three columns header-col">
+            <h1><span>Skills</span></h1>
+          </div>
 
-            <div className="nine columns main-col">
-                    <div className="row item">
-                       <div className="twelve columns">
-                          <h3>Resume: </h3>
-                          <a target="_blank" rel="noopener noreferrer"href="https://drive.google.com/file/d/1LrRUw0l7iP6yvI9tMBl3KEuFAiNLHEvX/view?usp=sharing">Google Drive Link</a>
-                          
-                       </div>
-                    </div>
-            </div>
-         </div>
+          <div className="nine columns main-col">
+
+            <p style={{fontSize: 20}}>
+              {resumeData.skillsDescription}
+            </p>
+
+            <div className="">
+
+              <ul className="skills">
+
+                {
+                  resumeData.skills && resumeData.skills.map((item) => {
+                    return(
+                      <li>
+                        <span className={`${item.skillIcon}`}>
+                        </span><em>   {item.skillname}</em>
+                      </li>
+                    )
+                  })
+               }
+
+        </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+       
          <div className="row education">
 
             <div className="three columns header-col">
@@ -78,40 +114,6 @@ export default  class Resume extends Component {
          </div>
 
 
-         <div className="row skill">
-
-            <div className="three columns header-col">
-               <h1><span>Skills</span></h1>
-            </div>
-
-            <div className="nine columns main-col">
-
-               <p style={{fontSize: 20}}>
-               {resumeData.skillsDescription}
-               </p>
-
-   				<div className="">
-
-   				   <ul className="skills">
-
-                {
-                  resumeData.skills && resumeData.skills.map((item) => {
-                    return(
-                      <li>
-                      <span className={`${item.skillIcon}`}>
-                      </span><em>   {item.skillname}</em>
-                      </li>
-                    )
-                  })
-                }
-
-   					</ul>
-
-   				</div>
-
-   			</div>
-
-         </div>
 
       </section>
     );

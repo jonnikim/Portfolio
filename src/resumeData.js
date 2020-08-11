@@ -5,7 +5,7 @@ let resumeData = {
   linkedinId: "https://www.linkedin.com/in/jonathan-h-kim/",
   skypeid: "Your skypeid",
   roleDescription:
-    " Currently journeying through the magical world of programming. Equipped with a passion for learning and a natural knack for teaching, my dream is to provide an easy to learn platform for K-12 students who are interested in programming.",
+    " Equipped with a passion for learning and teaching.",
   socialLinks: [
     {
       name: "linkedin",
@@ -113,28 +113,32 @@ let resumeData = {
   portfolio: [
     {
       name: "Dubsado - Scheduler",
-      description: "Scheduler application created for client Dubsado, LLC.",
-      imgurl: "images/portfolio/dubsado_logo.png",
+      description: `
+        Scheduler application w/login authentication created for client Dubsado, LLC.
+        Responsible for: Microsoft Azure AD, Microsoft Graph API, Oauth2, Passport, Express-Session`,
+      imgurl: "images/portfolio/dubsado.gif",
       url: "https://powerful-journey-34145.herokuapp.com/"
     },
     {
       name: "Workout Tracker",
-      description: "Workout Tracker using MongoDB and Nodejs",
-      imgurl: "images/portfolio/workout.png",
+      description: "Created with MongoDB, Mongoose and Nodejs",
+      imgurl: "images/portfolio/workouttracker.gif",
       url: "https://mighty-anchorage-19934.herokuapp.com/?id=5f2a1d131a542800172a5a65"
 
     },
     {
       name: "Note Taker",
       description: "Basic Note Taker using Nodejs",
-      imgurl: "images/portfolio/notepad.png",
+      imgurl: "images/portfolio/notetaker.gif",
       url: "https://polar-caverns-98753.herokuapp.com/"
 
     },
     {
       name: "Model View Controller Application",
-      description: "A simple 'eat a burger' application made to highlight MVC design paradigm",
-      imgurl: "images/portfolio/eatburger.png",
+      description: `
+        A simple 'eat a burger' application made to highlight MVC design paradigm.
+        Created with Express-HandleBars and MySQL`,
+      imgurl: "images/portfolio/burger.gif",
       url: "https://scenic-sequoia-26844.herokuapp.com/"
 
     },

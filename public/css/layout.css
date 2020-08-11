@@ -35,6 +35,7 @@ header {
    width: 100%;
    background: #161415 url(../images/header-background.jpg) no-repeat top center;
    background-size: cover !important;
+   /* background-size: 100% 500px; */
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
